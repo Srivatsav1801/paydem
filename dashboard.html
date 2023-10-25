@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paydem</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="menu">
+            <li class="brand">
+                <a href="index.html">
+                    <h1 style="font-family: Segoe Print ;">Pay<span style="color:#ffd70f ;font-family: Segoe Print">Dem</span></h1>
+                </a>
+            </li>
+            <li class="active">
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Orders</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-star"></i>
+                    <span>Offers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span>Primary</span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text"placeholder="Search"/>
+                </div>
+                <img src="images\profile.jpeg" alt="profile">
+            </div>
+        </div>
+
+        <div class="card-container">
+            <h1 class="main--title">Today's data</h1>
+            <div class="card--wrapper">
+                <div class="payment--card light-red">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                payment due amount
+                            </span>
+                            <span class="amount-value">
+                                ₹:50,000
+                            </span>
+                        </div>
+                        <i class="fas fa-indian-rupee icon" ></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 3456</span>
+                </div>
+
+                <div class="payment--card light-purple">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Total amount spent
+                            </span>
+                            <span class="amount-value">
+                                ₹:16,000
+                            </span>
+                        </div>
+                        <i class="fas fa-list icon dark-purple"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 3456</span>
+                </div>
+
+                <div class="payment--card light-green">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Income
+                            </span>
+                            <span class="amount-value">
+                                ₹:3,50,000
+                            </span>
+                        </div>
+                        <i class="fas fa-users icon dark-green"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 3456</span>
+                </div>
+
+                <div class="payment--card light-blue">
+                    <div class="card--header">
+                        <div class="amount">
+                            <span class="title">
+                                Last successful payment
+                            </span>
+                            <span class="amount-value">
+                                ₹:10,000
+                            </span>
+                        </div>
+                        <i class="fas fa-check icon dark-blue"></i>
+                    </div>
+                    <span class="card-detail">**** **** **** 3456</span>
+                </div>
+            </div>
+        </div>
+        <div class="tabular-wrapper">
+            <h3 class="main--title">Finance Data</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Transaction type</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Payment mode</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01-05-2023</td>
+                            <td>Income</td>
+                            <td>Salary</td>
+                            <td>₹3,30,000</td>
+                            <td>Hobby</td>
+                            <td>Completed</td>
+                            <td>Fund transfer</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>01-05-2023</td>
+                            <td>Expenses</td>
+                            <td>Work needs</td>
+                            <td>₹2,000</td>
+                            <td>Office expenses</td>
+                            <td>Pending</td>
+                            <td></td>
+                            <td><button>Pay now</button></td>
+                        </tr>
+                        <tr>
+                            <td>10-05-2023</td>
+                            <td>Income</td>
+                            <td>Website sale</td>
+                            <td>₹20,000</td>
+                            <td>Personal project</td>
+                            <td>Completed</td>
+                            <td>UPI</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11-05-2023</td>
+                            <td>Expenses</td>
+                            <td>Groceries</td>
+                            <td>₹4,000</td>
+                            <td>Daily needs</td>
+                            <td>Completed</td>
+                            <td>NFC pay</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>12-05-2023</td>
+                            <td>Expenses</td>
+                            <td>Pc parts</td>
+                            <td>₹10,000</td>
+                            <td>Hobby</td>
+                            <td>Completed</td>
+                            <td>Debit Card</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15-05-2023</td>
+                            <td>Expenses</td>
+                            <td>Graphics Card</td>
+                            <td>₹48,000</td>
+                            <td>Hobby</td>
+                            <td>Pending</td>
+                            <td></td>
+                            <td><button>Pay now</button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8">Total Pending amount = ₹50,000 </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
