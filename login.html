@@ -12,9 +12,10 @@
         <h1 style="font-family: Segoe Print ;">Pay<span style="color:#ffd70f ;font-family: Segoe Print">Dem</span></h1>
         <h1>Hi,again</h1>
         <p>Welcome back!</p>
-        <form action="dashboard.html">
-            <input type="text"placeholder="Enter Username" required>
-            <input type="password" placeholder="Password" required>
+        <form>
+            <input type="text"placeholder="Enter Username" required id="username">
+            <input type="password" placeholder="Password" required id="password">
+            <p id="info" style="color: red;"></p>
             <p class="recover">
                 <a href="#">Recover Password</a>
             </p>
@@ -32,5 +33,6 @@
             Not a member? <a href="signup.html">Register Now</a>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paydem</title>
+    <link rel="stylesheet" href="todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"><a href="index.html" style="text-decoration: none; color: white;"><h1 style="font-family: Segoe Print ;">Pay<span style="color:#ffd70f ;font-family: Segoe Print">Dem</span></h1></a></div>
+        <ul class="menu">
+            <li class="brand"><span style="font-size: 25px;"><pre> </pre></span></li>
+            <li>
+                <a href="dashboard.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Statistics</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="todo.html">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Todo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-question-circle"></i>
+                    <span>FAQ</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-star"></i>
+                    <span>Offers</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="index.html">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="main--content">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <h2>Todo List</h2>
+            </div>
+            <div class="user--info">
+                <div class="search--box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text"placeholder="Search"/>
+                </div>
+                <img src="images\profile.jpeg" alt="profile">
+            </div>
+        </div>
+
+        <div class="todo-container">
+            <h1 class="main--title">Tasks to do today!</h1>
+            <div class="left">
+                <form id="form">
+                    <div class="todo--box">
+                        <input type="text" placeholder="Task" id="input" required>
+                    </div>
+                    <br>
+                    <div id="msg"></div>
+                    <button type="submit" style="font-size: large; padding: 10px; border-radius: 20px;background-color: burlywood; color: white;">Add</button>
+                </form>
+            </div>
+                <div class="right">
+                    <br>
+                <h3>Tasks</h3>
+            <div id="posts">
+              <div>
+                <div class="check">
+                    <input type="checkbox" id="checkb"><pre>    </pre>
+                    <p>Implement javascript to website</p>
+                </div>
+                <span class="options">
+                  <i class="fas fa-edit" onclick="edit_function(this)"></i>
+                  <i class="fas fa-trash-alt" onclick="delete_function(this)"></i>
+                </span>
+              </div>
+            
+              <div>
+                <div class="check">
+                    <input type="checkbox" id="checkb"><pre>    </pre>
+                    <p>Improve the website</p>
+                </div>
+                <span class="options">
+                  <i class="fas fa-edit" onclick="edit_function(this)"></i>
+                  <i class="fas fa-trash-alt" onclick="delete_function(this)"></i>
+                </span>
+              </div>
+            </div>
+        </div>
+    <script src="todo.js"></script>
+</body>
+</html>
