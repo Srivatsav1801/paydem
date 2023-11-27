@@ -23,12 +23,11 @@ let data = {};
 let acceptData = ()=>{
     data["text"] = input.value;
     console.log(data)
-    posts.innerHTML += `<div><div class="check"><input type="checkbox" id="checkb"><pre>    </pre>
-        <p>${data.text}</p>
-    </div>
+    posts.innerHTML += `<div><p>${data.text}</p>
     <span class="options">
     <i class="fas fa-edit" onclick="edit_function(this)"></i>
     <i class="fas fa-trash-alt" onclick="delete_function(this)"></i>
+    <input type="checkbox" id="checkb">
     </span>
     </div>`;
     input.value = "";
