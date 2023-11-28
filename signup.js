@@ -1,5 +1,4 @@
-let users = [];
-
+var users = JSON.parse(localStorage.getItem('users')) || [];
 
 let button1 = document.querySelector("button");
 button1.addEventListener("click",() =>{
